@@ -269,7 +269,7 @@ class Uber_test extends Module
 
     public function hookDisplayHome()
     {
-        if(Tools::isSubmit('submit_uber')){
+        if(isset($_POST['submit_uber'])){
          $this->getUberData();
         }
         return '<input type="submit" name="submit_uber" class="btn btn-primary" value="AUTH TO UBER">';
